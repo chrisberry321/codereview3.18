@@ -1,0 +1,21 @@
+{
+  "name": "github",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "chris <chrisberry321@yahoo.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.2"
+  }
+}
