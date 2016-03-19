@@ -10,10 +10,10 @@ exports.getInfo = function(username) {
       "Login: " + response.login + "<br>" +
       "Name: " + response.name + "<br>" +
       "Location: " + response.location + "<br>" +
-      "Public repos: " + response.public_repos + "<br>"
-      "avatar_url"+response.avatar_url+'">'+
-
+      "Public repos: " + response.public_repos + "<br>" +
+      "avatar_url: " + response.avatar_url + "<br>"
     );
+
   }).fail(function(error){
     console.log(error.responseJSON.message);
   });

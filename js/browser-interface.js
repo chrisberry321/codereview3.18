@@ -7,7 +7,7 @@ $(document).ready(function() {
     event.preventDefault();
     var userName = $('#userName').val();
     $('.results').text("");
-    console.log(getInfo)
+    console.log(getInfo);
     getInfo(userName);
     getRepos(userName);
   });
