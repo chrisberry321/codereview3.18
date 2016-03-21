@@ -3,17 +3,15 @@ var username = "";
 var all_repos = [];
 
 exports.getInfo = function(username) {
-  $.get('https://api.github.com/users/' + username + '?access_token=' + apiKey).then(function(response){
-    console.log(response);
-
+  $.get('https://api.github.com/users/' + username + '?access_token=' + apiKey).then(function(response) {
+    // console.log(response);
     $('.results').prepend(
       "Login: " + response.login + "<br>" +
       "Name: " + response.name + "<br>" +
       "Location: " + response.location + "<br>" +
       "Public repos: " + response.public_repos + "<br>" +
-      "avatar_url: " + response.avatar_url + "<br>"
+      '<img src=' + response.avatar_url + '>'
     );
-
   }).fail(function(error){
     console.log(error.responseJSON.message);
   });
@@ -21,7 +19,7 @@ exports.getInfo = function(username) {
 
 exports.getRepos = function(username) {
   $.get('https://api.github.com/users/' + username + '/repos?access_token=' + apiKey + '&sort=created&per_page=100').then(function(response) {
-    console.log(response);
+    // console.log(response);
     response.forEach(function(repo, index) {
       if (repo.private === false) {
         $('.repositories').prepend(

@@ -1,3 +1,69 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+body{
+  background-color: #D6D6D6;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
 h1{
   text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+#userSearch {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  #userName {
+  margin: 5px;
+  height: 28px;
+  border: 2px solid whitesmoke;
+  padding: 4px;
+  }
+  #locateUser {
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    padding: 0 19px;
+    border: none;
+    border-radius: 10px;
+
+    &:hover {
+      background-color: darken(blue, 20%);
+    }
+  }
+}
+
+.results {
+  display: flex;
+  background-color: #F4FFD7;
+  width: 60vw;
+  margin: 30px 10px 10px;
+  img {
+
+    border-radius: 30px;
+
+  }
+}
+
+.repositories {
+  margin: 5%;
+  a {
+    text-decoration: none;
+    color: blue;
+    &:hover {
+      color: lighten(blue, 20%);
+    }
+  }
+  strong {
+    color: #F0F0F0;
+    font-style: italic;
+  }
 }
