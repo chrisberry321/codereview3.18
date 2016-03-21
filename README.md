@@ -6,7 +6,7 @@
 
 ## Description
 
-This website will create a form where the user can enter a _GitHub_ username and submit it to see names and descriptions of that person's public repositories. All frontend dependencies will be managed with _Bower_, while all other dependencies will use npm. 
+This website will create a form where the user can enter a _GitHub_ username and submit it to see names and descriptions of that person's public repositories. All frontend dependencies will be managed with _Bower_, while all other dependencies will use npm.
 
 ## Setup/Installation Requirements
 
@@ -14,6 +14,10 @@ This website will create a form where the user can enter a _GitHub_ username and
 
 [Click here](https://chrisberry321.github.io/codereview3.18/)
 https://chrisberry321.github.io/codereview3.18
+
+1. Clone the repository.
+2. In project folder in Terminal, run $npm init, $npm install, $bower init, $bower install.
+4. Run $gulp build and $gulp serve to begin.
 
 
 ## Known Bugs
